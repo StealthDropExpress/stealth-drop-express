@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="generator" content="Square Online">
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.weebly.com/favicon.ico">
+    <link rel="preload" href="https://cdn3.editmysite.com/app/website/css/site.3e67d0820f76a805afd5.css" as="style">
+
+    <style>
+        .loading-view {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+
+        .loading-container {
+            width: 62px;
+            height: 54px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 12px;
+        }
+
+        @media (min-width: 840px) {
+            .loading-container {
+                width: 72px;
+                height: 54px;
+                grid-gap: 12px;
+            }
+        }
+
+        .dot-container {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(#063c5a20, #063c5a);
+            /* Base64 encoded simple circle SVG /resources/assets/js/prime/src/site/components/ui/circle.svg */
+            mask-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xIC0xIDIgMiI+Cgk8Y2lyY2xlIHI9IjEiLz4KPC9zdmc+Cg==');
+            -webkit-mask-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xIC0xIDIgMiI+Cgk8Y2lyY2xlIHI9IjEiLz4KPC9zdmc+Cg==');
+            mask-repeat: no-repeat;
+            -webkit-mask-repeat: no-repeat;
+            mask-size: 100% auto;
+            -webkit-mask-size: 100% auto;
+            mask-position: bottom;
+            -webkit-mask-position: bottom;
+            animation: loading-view-movement;
+            animation-delay: 0s;
+            animation-duration: 3750ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.8, 0, 0.8, 1);
+        }
+
+        .dot-container:nth-of-type(2) {
+            animation-delay: 130ms;
+        }
+
+        .dot-container:nth-of-type(3) {
+            animation-delay: 260ms;
+        }
+
+        @keyframes loading-view-movement {
+            /* up and down for 3s, stop for 750ms */
+            0%, 27%, 54% {
+                mask-position: bottom;
+                -webkit-mask-position: bottom;
+            }
+
+            14%, 41%, 68% {
+                mask-position: top;
+                -webkit-mask-position: top;
+            }
+
+            27%, 54%, 81%, 100% {
+                mask-position: bottom;
+                -webkit-mask-position: bottom;
+            }
+        }
+    </style>
+
+            <link rel="manifest" href="/manifest.webmanifest">
+            <meta name="apple-mobile-web-app-capable" content="yes">
+            <meta name="apple-mobile-web-app-status-bar-style" content="default">
+            <meta name='apple-mobile-web-app-title' content='Stealth Drop Express'>
+            <meta name='theme-color' content='#063c5a'>
+            <meta name='msapplication-TileColor' content='#063c5a'>
+            <link rel='apple-touch-icon' href='/uploads/b/6bfd6c90-b2fe-11f0-a0ff-a14e95dbc092/icon_180x180_ios_MTM1Mz.png?width=180'>
+            <meta name='msapplication-TileImage' content='/uploads/b/6bfd6c90-b2fe-11f0-a0ff-a14e95dbc092/icon_180x180_ios_MTM1Mz.png?width=144'>
+            <link rel='apple-touch-icon' sizes='120x120' href='/uploads/b/6bfd6c90-b2fe-11f0-a0ff-a14e95dbc092/icon_180x180_ios_MTM1Mz.png?width=120'>
+            <link rel='apple-touch-icon' sizes='152x152' href='/uploads/b/6bfd6c90-b2fe-11f0-a0ff-a14e95dbc092/icon_180x180_ios_MTM1Mz.png?width=152'>
+            <link rel='apple-touch-icon' sizes='167x167' href='/uploads/b/6bfd6c90-b2fe-11f0-a0ff-a14e95dbc092/icon_180x180_ios_MTM1Mz.png?width=167'>
+            <link rel='apple-touch-icon' sizes='180x180' href='/uploads/b/6bfd6c90-b2fe-11f0-a0ff-a14e95dbc092/icon_180x180_ios_MTM1Mz.png?width=180'>
+            <link rel='apple-touch-startup-image' href='/uploads/b/6bfd6c90-b2fe-11f0-a0ff-a14e95dbc092/splash_2048x4435_NzQ3Nz.jpg?width=750&height=1334&fit=crop' media='(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='/uploads/b/6bfd6c90-b2fe-11f0-a0ff-a14e95dbc092/splash_2048x4435_NzQ3Nz.jpg?width=1242&height=2208&fit=crop' media='(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='/uploads/b/6bfd6c90-b2fe-11f0-a0ff-a14e95dbc092/splash_2048x4435_NzQ3Nz.jpg?width=1125&height=2436&fit=crop' media='(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='/uploads/b/6bfd6c90-b2fe-11f0-a0ff-a14e95dbc092/splash_2048x4435_NzQ3Nz.jpg?width=828&height=1792&fit=crop' media='(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='/uploads/b/6bfd6c90-b2fe-11f0-a0ff-a14e95dbc092/splash_2048x4435_NzQ3Nz.jpg?width=1242&height=2688&fit=crop' media='(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='/uploads/b/6bfd6c90-b2fe-11f0-a0ff-a14e95dbc092/splash_2048x4435_NzQ3Nz.jpg?width=1170&height=2532&fit=crop' media='(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='/uploads/b/6bfd6c90-b2fe-11f0-a0ff-a14e95dbc092/splash_2048x4435_NzQ3Nz.jpg?width=1284&height=2778&fit=crop' media='(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='/uploads/b/6bfd6c90-b2fe-11f0-a0ff-a14e95dbc092/splash_2048x4435_NzQ3Nz.jpg?width=1536&height=2048&fit=crop' media='(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='/uploads/b/6bfd6c90-b2fe-11f0-a0ff-a14e95dbc092/splash_2048x4435_NzQ3Nz.jpg?width=1620&height=2160&fit=crop' media='(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='/uploads/b/6bfd6c90-b2fe-11f0-a0ff-a14e95dbc092/splash_2048x4435_NzQ3Nz.jpg?width=1668&height=2224&fit=crop' media='(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='/uploads/b/6bfd6c90-b2fe-11f0-a0ff-a14e95dbc092/splash_2048x4435_NzQ3Nz.jpg?width=1668&height=2388&fit=crop' media='(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)'>
+            <link rel='apple-touch-startup-image' href='/uploads/b/6bfd6c90-b2fe-11f0-a0ff-a14e95dbc092/splash_2048x4435_NzQ3Nz.jpg?width=2048&height=2732&fit=crop' media='(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)'>
+    
+                        <script src="https://consent.cookiebot.com/uc.js" data-cbid="77a73a28-177d-4cee-96cb-bff1d0fcaafa" data-framework="TCFv2.2" data-blockingmode="auto">
+</script>
+            
+    
+        <script defer src="https://cdn3.editmysite.com/app/checkout/assets/checkout/system.c3b89b0b94f4ef0671b1.js" data-cookieconsent="ignore"></script>
+    
+    
+        <script type="systemjs-importmap" src="https://cdn3.editmysite.com/app/checkout/assets/checkout/imports.en.fa407b3998e3fa3b.js" data-cookieconsent="ignore"></script>
+    
+    
+            <script type="systemjs-importmap" src="https://cdn3.editmysite.com/app/checkout/assets/checkout/locale-imports-map.fe48f15351af7b65.json" data-cookieconsent="ignore"></script>
+    
+    
+    <script defer type="text/javascript" src="https://cdn3.editmysite.com/app/website/js/runtime.d76ab5cc21504c6e1436.js" data-cookieconsent="ignore"></script>
+    <script defer type="text/javascript" src="https://cdn3.editmysite.com/app/website/js/vue-modules.4a41b3ba298bf4563d97.js" data-cookieconsent="ignore"></script>
+    <script defer type="text/javascript" src="https://cdn3.editmysite.com/app/website/js/languages/en.829fdd610dbb90c47c79.js" data-cookieconsent="ignore"></script>
+    <script defer type="text/javascript" src="https://cdn3.editmysite.com/app/website/js/site.f7bc79891041cf27269e.js" data-cookieconsent="ignore"></script>
+
+    
+    <meta property="og:type" content="website" />
+    
+    <script data-cookieconsent="ignore">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    </script>
+
+            
+    
+    <!--square-online-feature-flags-->
+<script type="application/javascript" data-cookieconsent="ignore" data-role="square-online-featureflags">
+    window.__DYNAMIC_BOOTSTRAP__ ??= {};
+
+    Object.assign(window.__DYNAMIC_BOOTSTRAP__, {
+        featureFlags: {"ecom.website.deprecated-layouts":false,"marketing-enable-drive-repeat-purchase-campaign":true,"ecom.website.facebook-food":true,"ecom.website.theme-export":false,"ecom.website.chamber-via-fastly":true,"ecom.square-online-published-catalog-cache-version":"2023-11-13","ecom.checkout.open_tabs":true,"ecom.website.photo-reviews":true,"ecom.checkout.cmi-sentry-integration":true,"ecom.checkout.cmi.bootstrap-tracking-snowplow":true,"ecom.checkout.cmi.bootstrap-tracking-ga":true,"ecom.website.order-confirmation-page.website-redirect":false,"ecom.checkout.cmi.locale-view-splitting":true,"ecom.checkout.open_tabs_gc_coupon":true,"ecom.cmi-cart":true,"ecom.checkout.cmi.theme-fonts":false,"ecom-fulfillment-api-v-2":false,"ecom.omnichannel-discounts-frontend":true,"ecom.omnichannel-discounts-category-api":false,"ecom-improved-tipping-experience":true,"ecom.splash.loyalty":false,"ecom.website.published-site.datadog-rum":true,"ecom.website.editor.datadog-rum":true,"ecom-website-published-site-datadog-rum-bot-filter":true,"ecom-use-tracking-inventory":true,"ecom.image-controls.width-fix":true,"ecom.gradient-backgrounds":true,"ecom.website.form-fraud-blocking":true,"ecom.website.form-fraud-auto-ban":true,"ecom.website.code-editor":false,"ecom.shopping.pdp-layouts-m1":true,"ecom.chamber.subscriptions":true,"ecom.tuba.subscriptions-paid-shipping-rates":true,"ecom-cko-enhanced-logging":true,"ecom-cko-unified-logging":true,"ecom.shopping.so-coupons-sunset-integrations":false,"ecom.order-online-text-layouts":true,"ecom.appointment-improvements":true,"ecom.appointment-improvements-m2":true,"ecom.tuba.committed-inventory-m1":true,"ecom.splash-improvements":true,"ecom-themes-onboarding":true,"ecom.shopping.featured-categories-paid-layouts":true,"ecom.website.ai-text.short-form":false,"ecom.website.ai-text.long-form":false,"ecom.website.metered-request.override":false,"ecom.website.async-create-theme":false,"ecom.chamber.spi.serve-items":false,"ecom.can_use_cart_sharing":false,"ecom.website.ai.editor-prototype":false,"ecom.website.ai.page-seo":false,"ecom.appointment-direct-booking":true,"ecom-service-cutover-fe-request-augmentations":true,"ecom.catalog.so-item-library-deprecation-3":true,"ecom.kiosk-photo-card":true,"ecom.website.system-page.cart":false,"ecom-enable-kiosk-large-catalog-layout":false,"ecom-hide-instagram":false,"ecom-enable-kiosk-item-preloading":true,"ecom-brand-api-sync":true,"ecom.service-cutover.enable-tuba-traffic":true,"ecom-show-order-online":false,"ecom-website-combos":true,"websdk-use-new-afterpay-buttons":false,"ecom-checkout-should-check-is-decouple-checkout":true,"ecom-prime-use-store-info-v29":true,"ecom-checkout-decouple-open-tabs":true,"ecom-checkout-force-pci-compliance":false,"ecom-website-hide-food-beverage-themes":false,"ecom-orbit-to-monochrome":true,"ecom-website-fix-dine-in-location-selection":true,"ecom-use-category-ids":true},
+    });
+</script>
+<!--end-square-online-feature-flags-->
+
+    <script type="application/javascript" data-cookieconsent="ignore">
+        window.__BOOTSTRAP_STATE__ = {"siteData":{"site":{"id":"6bfd6c90-b2fe-11f0-a0ff-a14e95dbc092","properties":{"classicSiteID":"643792581227141733","catalogSiteId":"643792581227141733","selectedVertical":"arts-crafts","verticalV4":"home-goods-shop","language":"en","squareMerchantId":null,"siteCatalogVersion":"dd2b4ed1-c5d8-4706-82da-6eb8e116335c","appSiteCartNativePayControlGroup":false,"appSiteCartNativePayTestGroup":false,"isKioskSite":false,"squareSyncUserId":null,"isServiceCutoverEnabled":true,"createdPostMenusMigration":false,"migratedSquareOnlineSiteToMenus":false,"blockFtux":{"blog-header":["ftux-alert"],"product-detail":["ftux-alert"],"category-products":["ftux-alert"]},"onboarded":{"guidance":{"version":"1","complete":true,"welcomeComplete":true,"instagramMiniSiteTipDismissed":true,"guidanceMobileTrafficDismissedCount":3},"backendOnboarding":true,"isSiteDesignOnboarded":true,"isVideoBannerAnnouncementDismissed":true,"isCustomizationDiscoverabilityDismissed":true},"publishedAt":1762148175,"cookieManagement":{"type":"cookiebot","config":{"id":"d0d14330-f023-41ee-a7a7-f4153afc3c80","domainName":"stealth-drop-express.weeblysite.com"}},"siteIconSettings":{"type":"free","disabled":false,"updatedAt":1762148177,"splash_images":{"config":{"size":"2048","radius":0,"fontPath":"\/var\/www\/public\/static\/fonts\/Square Market\/sqmarket-medium.woff","iconType":"free","imageUrl":null,"language":"en","siteTitle":"Stealth Drop Express","customColor":"#063c5a","primaryColor":"#063c5a","contrastColor":"#ffffff"},"2048x4435":"\/uploads\/b\/6bfd6c90-b2fe-11f0-a0ff-a14e95dbc092\/splash_2048x4435_NzQ3Nz.jpg"},"ios_icon_images":{"config":{"size":"180","radius":0,"fontPath":"\/var\/www\/public\/static\/fonts\/Square Market\/sqmarket-medium.woff","iconType":"free","imageUrl":null,"language":"en","siteTitle":"Stealth Drop Express","customColor":"#063c5a","primaryColor":"#063c5a","contrastColor":"#ffffff"},"180x180":"\/uploads\/b\/6bfd6c90-b2fe-11f0-a0ff-a14e95dbc092\/icon_180x180_ios_MTM1Mz.png"},"android_icon_images":{"config":{"size":"512","radius":256,"fontPath":"\/var\/www\/public\/static\/fonts\/Square Market\/sqmarket-medium.woff","iconType":"free","imageUrl":null,"language":"en","siteTitle":"Stealth Drop Express","customColor":"#063c5a","primaryColor":"#063c5a","contrastColor":"#ffffff"},"512x512":"\/uploads\/b\/6bfd6c90-b2fe-11f0-a0ff-a14e95dbc092\/icon_512x512_android_NTA4Mz.png"}},"selectedDeviceView":"desktop","manageQrCodeClicked":true,"order_fulfillment_guides":"shipping","domain":{"custom_domain":"","subdomain":"stealth-drop-express.weeblysite.com","site_id":643792581227141733}}},"pagesMeta":[{"id":"03ccd250-b877-11f0-ba0e-8f5a3678e6e8","name":"About","route":"about","title":"About Us","featureType":null,"description":"","hidden":false},{"id":"03cc4520-b877-11f0-8b03-d791ffe0a217","name":"Contact Us","route":"contact-us","title":"Contact Us","featureType":null,"description":"","hidden":false},{"id":"03cc7fd0-b877-11f0-8742-89c5fbaef709","name":"Gallery","route":"gallery","title":"Package Deals","featureType":null,"description":"","hidden":false},{"id":"03cd1520-b877-11f0-b15a-cf88d09f182e","name":"Home","route":"home","title":"Home","featureType":null,"description":"","hidden":false}],"customPagesMeta":[],"artifactsMeta":[{"id":"03cf99d0-b877-11f0-8fc8-e319940e20a2","template_id":"03cdb9c0-b877-11f0-b35b-e33a0662174e","resource_id":"2a225830-b634-11f0-b0bc-cfc9abb0b5ad"},{"id":"03cf4490-b877-11f0-8def-15e7d542be7d","template_id":"03cdb9c0-b877-11f0-b35b-e33a0662174e","resource_id":"2eaff7b0-b873-11f0-be51-c5db3d7a18c5"},{"id":"03cf6fc0-b877-11f0-b456-b14d51290907","template_id":"03cdb9c0-b877-11f0-b35b-e33a0662174e","resource_id":"6e316dd0-b662-11f0-982f-e3d20eb3041e"},{"id":"03cf1860-b877-11f0-80f1-6506c20299f5","template_id":"03cdb9c0-b877-11f0-b35b-e33a0662174e","resource_id":"d7056da0-b875-11f0-a889-17b7d809c957"}],"snapshot":{"id":"03cbc5c0-b877-11f0-9976-89f51a2bef1b","site_id":"6bfd6c90-b2fe-11f0-a0ff-a14e95dbc092","properties":{"seo":{"page":{"03cc7fd0-b877-11f0-8742-89c5fbaef709":{"title":"Gallery","description":""},"03ccd250-b877-11f0-ba0e-8f5a3678e6e8":{"title":"About","description":""},"03cd1520-b877-11f0-b15a-cf88d09f182e":{"title":"Home","description":""}},"story":{"6e316dd0-b662-11f0-982f-e3d20eb3041e":{"title":"Our first customer","description":"Start writing your story here."}}},"logo":"\/uploads\/b\/4e03c8349274b5891180154b2a365364b310446dac79f9e869d77ab6e724e0b5\/Final%20Stealth%20Drop%20Express%20design_1761547371.png","color":{"primaryColor":"#063c5a","colorProfiles":[{"id":"primary-bold","background":"--color-secondary-NOPTrG","buttonFilledBg":"--primary-color"}],"secondaryColors":[{"id":"--color-secondary-NOPTrG","value":"#cfdfdc"}],"siteColorProfile":"primary-bold"},"title":"Stealth Drop Express","social":[{"icon":"email","user":"","selected":false},{"icon":"facebook","user":"748621431678258","selected":true},{"icon":"instagram","user":"","selected":false},{"icon":"linkedin","user":"","selected":false},{"icon":"pinterest","user":"","selected":false},{"icon":"snapchat","user":"","selected":false},{"icon":"tiktok","user":"","selected":false},{"icon":"twitter","user":"","selected":false},{"icon":"vimeo","user":"","selected":false},{"icon":"yelp","user":"","selected":false},{"icon":"youtube","user":"","selected":false}],"fontset":{"name":"sqmarket","version":"0.1.0","overrides":{}},"fontPair":{"id":"square-market"},"homepage":{"type":"page","typeID":"03cd1520-b877-11f0-b15a-cf88d09f182e"},"routeMap":{"":"03cd1520-b877-11f0-b15a-cf88d09f182e","home":"03cd1520-b877-11f0-b15a-cf88d09f182e","about":"03ccd250-b877-11f0-ba0e-8f5a3678e6e8","gallery":"03cc7fd0-b877-11f0-8742-89c5fbaef709","contact-us":"03cc4520-b877-11f0-8b03-d791ffe0a217"},"styleset":{"name":"square","version":"0.1.0"},"framework":{"name":"birdseye","version":"0.1.0"},"onboarded":false,"openGraph":{"page":{"03cc7fd0-b877-11f0-8742-89c5fbaef709":{"title":"Gallery","description":""},"03ccd250-b877-11f0-ba0e-8f5a3678e6e8":{"title":"About","description":""},"03cd1520-b877-11f0-b15a-cf88d09f182e":{"image":"\/uploads\/b\/6bfd6c90-b2fe-11f0-a0ff-a14e95dbc092\/Final%20Stealth%20Drop%20Express%20design.png","title":"Home","description":""}},"story":{"6e316dd0-b662-11f0-982f-e3d20eb3041e":{"title":"Our first customer","description":"Start writing your story here."}}},"blocksMeta":{"37156981-b432-11f0-8157-615d9ecd5473":"GvFQBH","686f2181-b575-11f0-87a6-9b420db910c5":"KBwETo","6c349cb0-b2fe-11f0-8b3d-e594f5ceedff":"EZalks","6c349cb1-b2fe-11f0-8b3d-e594f5ceedff":"SPnuVC","6c349cb2-b2fe-11f0-8b3d-e594f5ceedff":"dqGaIs","6c349cb3-b2fe-11f0-8b3d-e594f5ceedff":"QJyWhC","6c349cb4-b2fe-11f0-8b3d-e594f5ceedff":"GJVZwb","6ccff251-b2fe-11f0-8b3d-e594f5ceedff":"DYqCJR","6cd52274-b2fe-11f0-8b3d-e594f5ceedff":"jBJSgX","6e7f6a51-b55f-11f0-b342-e1b2ec8030e1":"DkxRni","8891f771-b431-11f0-8157-615d9ecd5473":"TmIlUk","8e403c51-b4da-11f0-8739-f35e4e884032":"MCWNbc","925adc10-b3c6-11f0-a8bc-578361be8ba1":"NxWaAT","929af681-b630-11f0-a6da-4f812515aebd":"owyYxV","9fa6d4f1-b574-11f0-87a6-9b420db910c5":"LDHRWa","a5a3e8d1-b5eb-11f0-90d3-355de9ffce13":"UhYTLG","b7e34221-b66d-11f0-9bf2-01771aa5fb72":"lmfPQb","c5aa7761-b55b-11f0-b342-e1b2ec8030e1":"UCnOTw","ced4f9d1-b648-11f0-9036-57250f44f6cf":"vKLMTd","df01cd10-b5e9-11f0-90d3-355de9ffce13":"qeahNu","e9890f31-b4fb-11f0-b17a-33c012071a43":"cZaOmt","f5ce6390-b653-11f0-8fd6-118ba06a5002":"XNeUBb","f768a3e1-b659-11f0-ab73-633a9e333ee0":"TDSPAh"},"headerLogo":"\/uploads\/b\/4e03c8349274b5891180154b2a365364b310446dac79f9e869d77ab6e724e0b5\/Stealth%20Drop%20Express%20design%20%282%29_1761786368.png","navigation":[{"link":{"page":{"pageID":"03cd1520-b877-11f0-b15a-cf88d09f182e"}},"type":"page"},{"link":{"page":{"pageID":"03ccd250-b877-11f0-ba0e-8f5a3678e6e8"}},"type":"page"},{"link":{"page":{"pageID":"03cc7fd0-b877-11f0-8742-89c5fbaef709"}},"type":"page"},{"link":{"story":"5a9464c0-b55e-11f0-a46e-879a931b1d10"},"type":"story","title":"Story title"},{"link":{"page":{"pageID":"03cc4520-b877-11f0-8b03-d791ffe0a217"}},"type":"page"},{"link":{"storiesOverview":true},"type":"storiesOverview","children":[]}],"buttonstyle":"squared","customFonts":[],"featuresets":["retail","blogOverview"],"contentAreas":{"cart":{"id":"6c51e8b2-b2fe-11f0-8b3d-e594f5ceedff","hidden":false,"content":{"id":"6c349cb3-b2fe-11f0-8b3d-e594f5ceedff","type":"block","layout":"cart-1","purpose":"cart@^1.3.6","elements":[{"id":"6c51c1a8-b2fe-11f0-8b3d-e594f5ceedff","purpose":"text","properties":{}}],"properties":{"shortID":"QJyWhC"}}},"footer":{"id":"6cb23124-b2fe-11f0-8b3d-e594f5ceedff","hidden":false,"content":{"id":"6c349cb0-b2fe-11f0-8b3d-e594f5ceedff","type":"block","hidden":false,"layout":"footer-7","purpose":"footer","elements":[{"id":"6cb23120-b2fe-11f0-8b3d-e594f5ceedff","purpose":"logo","properties":{"type":"logo"}},{"id":"6cb23121-b2fe-11f0-8b3d-e594f5ceedff","purpose":"text","properties":{"hidden":false,"content":{"quill":{"ops":[{"insert":"\u00a9 2025 Stealth Drop Express\n"}]}}}},{"id":"6cb23122-b2fe-11f0-8b3d-e594f5ceedff","purpose":"social","properties":{"presetColor":"brand"}},{"id":"6cb20a13-b2fe-11f0-8b3d-e594f5ceedff","purpose":"cookie-management-settings","properties":{}},{"id":"6cb23123-b2fe-11f0-8b3d-e594f5ceedff","purpose":"newsletter","properties":{"type":"subscription","fields":[{"id":"6c51c1aa-b2fe-11f0-8b3d-e594f5ceedff","type":"action-input","label":"","required":true,"properties":{},"instructions":""}],"schema":{"id":"6c51c1ab-b2fe-11f0-8b3d-e594f5ceedff","hash":"98c5a0d53b3020bb09d6cca98092658e"},"confirmation":"Thank you for subscribing to Stealth Drop Express!"}}],"properties":{"shortID":"EZalks","textAlign":"","background":{"type":"default"},"navigation":{"hidden":false,"SITE_NAV":[{"link":{"page":{"pageID":"03cd1520-b877-11f0-b15a-cf88d09f182e"}},"type":"page","title":"Home ","children":[],"expanded":false},{"link":{"page":{"pageID":"03ccd250-b877-11f0-ba0e-8f5a3678e6e8"}},"type":"page","title":"\/ About Us \/","children":[],"expanded":false},{"link":{"page":{"pageID":"03cc7fd0-b877-11f0-8742-89c5fbaef709"}},"type":"page","title":"Items \/","children":[],"expanded":false},{"link":{"page":{"pageID":"bd412bd0-b42f-11f0-b375-13dbc4a02f0f"}},"type":"page","title":"Gallery ","children":[],"expanded":false}],"shouldCopyHeader":true},"colorProfile":"","paymentMethods":{"hidden":true},"newsletterTitle":{"tag":"p","color":"var(--primary-color)","content":{"quill":{"ops":[{"insert":"Subscribe Now!\n"}]}},"fontSize":"large"}}}},"header":{"id":"6c51e8b0-b2fe-11f0-8b3d-e594f5ceedff","hidden":false,"content":{"id":"6c349cb1-b2fe-11f0-8b3d-e594f5ceedff","type":"block","hidden":false,"layout":"header-3","purpose":"header","elements":[{"id":"6c51c1a0-b2fe-11f0-8b3d-e594f5ceedff","purpose":"logo","properties":{"name":"Stealth Drop Express d...(2).png","type":"logo-image-override","scale":0,"original":"\/uploads\/b\/4e03c8349274b5891180154b2a365364b310446dac79f9e869d77ab6e724e0b5\/Stealth%20Drop%20Express%20design%20%282%29_1761786368.png","cropOptions":null,"logoDimensions":{"width":500,"height":500}}},{"id":"6c51c1a1-b2fe-11f0-8b3d-e594f5ceedff","purpose":"social","properties":{}},{"id":"6c51c1a2-b2fe-11f0-8b3d-e594f5ceedff","purpose":"navigation","properties":{"config":{"color":"var(--color-secondary-NOPTrG)"},"hidden":false}},{"id":"6c51c1a3-b2fe-11f0-8b3d-e594f5ceedff","purpose":"hamburger","properties":{}},{"id":"6c51c1a4-b2fe-11f0-8b3d-e594f5ceedff","purpose":"cart","properties":{}}],"properties":{"shortID":"SPnuVC","textAlign":"","background":{"type":"color","color":{"value":"--primary-color","isDark":true},"transparentOverBanner":false},"actionButton":{"link":{"tab":false,"link":{"page":{"pageID":"03cc7fd0-b877-11f0-8742-89c5fbaef709"},"shopAll":true},"type":"shopAll"},"hidden":false,"presetColor":"--color-secondary-NOPTrG","presetStyle":"secondary"},"colorProfile":"primary-bold","headerScroll":"sticky","disableSearch":false}}},"navMobile":{"id":"6c51e8b1-b2fe-11f0-8b3d-e594f5ceedff","hidden":false,"content":{"id":"6c349cb2-b2fe-11f0-8b3d-e594f5ceedff","type":"block","layout":"navigation-mobile","purpose":"nav-mobile@^1.2.1","elements":[{"id":"6c51c1a5-b2fe-11f0-8b3d-e594f5ceedff","purpose":"navigation","properties":{}},{"id":"6c51c1a6-b2fe-11f0-8b3d-e594f5ceedff","purpose":"close","properties":{}},{"id":"6c51c1a7-b2fe-11f0-8b3d-e594f5ceedff","purpose":"social","properties":{}}],"properties":{"shortID":"dqGaIs"}}},"freeFooter":{"id":"6c51e8b3-b2fe-11f0-8b3d-e594f5ceedff","hidden":false,"content":{"id":"6c349cb4-b2fe-11f0-8b3d-e594f5ceedff","type":"block","layout":"free-footer-1","purpose":"free-footer@^1.0.0","elements":[],"properties":{"bgColor":"dark","shortID":"GJVZwb"}}}},"pageOverrides":{},"pageTemplates":{"story":"03cdb9c0-b877-11f0-b35b-e33a0662174e","product":"03ce88a0-b877-11f0-b6d5-ab3e43ac0eed","shopAll":"03cde8c0-b877-11f0-904b-816fec1fa6ed","category":"03cde8c0-b877-11f0-904b-816fec1fa6ed","leaveReview":"03ce1380-b877-11f0-9517-5748f7318455","orderOnline":"03ce5e00-b877-11f0-b16b-ed69ab0d05b2","instagramFeed":"03ceb900-b877-11f0-889d-43c117d54298","searchResults":"03cde8c0-b877-11f0-904b-816fec1fa6ed","storiesOverview":"03cd8fc0-b877-11f0-bac0-d764550944c4"}},"version":8},"user":{"id":154196962,"properties":{"isSquareSyncUser":false,"country":"PH"}},"billingFeatures":{"billingFeatures":{"embed_restricted_widgets":false,"com_gifting":false,"com_authorizenet_payment":false,"com_digital_products":true,"com_coupons":true,"com_product_reviews":false,"com_product_limit":-1,"popup_announcement":true,"popup_coupons":false,"popup_lead_capture":true,"community_support":true,"free_ssl_security":true,"custom_domain_connection":false,"advanced_site_stats":false,"password_protection":false,"video_backgrounds":false,"hd_video_and_audio":false,"membership_registration":false,"membership_settings":false,"online_store":true,"accept_paypal_payments":false,"product_badges":true,"product_modifiers":true,"in_store_pickup":true,"shipping_calculator":true,"chat_and_email_support":true,"phone_support":false,"priority_support":false,"advanced_ecommerce_stats":false,"seo":true,"unlimited_storage":false,"members":false,"abandoned_cart_emails":false,"integrated_shipping_labels":true,"tax_calculator":true,"no_weebly_ads":false,"site_search":true,"product_search":true,"square_gift_cards":true,"inventory_management":true,"integrated_facebook_ads":false,"real_time_shipping_calculator":false,"age_confirmation":true,"square_processing_rate_id":"ECOM_SOS_FREE","square_processing_rate_display":{"USD":[{"percent":"2.9","flat":30,"type":"all"}],"AUD":[{"percent":"2.2","flat":0,"type":"all"}],"CAD":[{"percent":"2.8","flat":30,"type":"all"}],"EUR":[{"percent":"1.4","flat":25,"type":"intra-eu"},{"percent":"2.9","flat":25,"type":"non-eu"}],"GBP":[{"percent":"1.4","flat":25,"type":"intra-eu"},{"percent":"2.5","flat":25,"type":"non-eu"}],"JPY":[{"percent":"3.6","flat":0,"type":"non-jcb"},{"percent":"3.6","flat":0,"type":"jcb"}]},"favicon_customization":false,"site_code_customization":true,"instagram_feed_tagging":true,"quick_shop":true,"scheduleEnabled":false,"smartGroupsEnabled":false,"socialAdsEnabled":false,"lifetimeEmails":2,"emailsPerMonth":2,"recipientsPerEmail":500,"recipientsPerMonth":1000,"automations":0,"automatedRecipientsPerMonth":0,"enabledLeadFormTypes":["popup"],"allowsPurchasingCredits":false,"insights_overview":false,"insights_sales":false,"insights_products":false,"custom_fonts":false,"com_shipping_settings":true,"com_manage_gift_cards":true,"com_create_shipping_label_discount":true,"customer_accounts":true,"com_stripe_payment":false,"com_product_sync":true,"com_product_variant_limit":-1,"com_shipping_labels_tier":"weebly_cpp_tier","com_transaction_fee":"0.00","form_file_upload":false,"product_scheduled_actions":false,"custom_site_icon":false,"video_uploading":0,"buyer_customer_accounts":false,"personalized_order_screen":false,"personalized_recommendations":false,"easy_reordering":false,"self_serve_ordering":true,"ecom_preorders":false,"order_text_alerts":true,"time_based_categories":false,"advanced_order_limits":false,"modifier_images":false,"free_fulfillment_meter":false,"spd_fees_amount":0,"twenty_four_seven_support":false,"advanced_design_controls":false,"order_item_quantity_limit":false,"stock_media":false,"so_buyer_subscriptions":false,"item_badge_customization":false,"shop_all_item_layouts":false,"icon_sets":false,"banner_slides":false,"priority_phone_support":false,"pdp_layouts":false,"full_height_banners":false,"scrolling_text":false,"featured_item_layouts":false,"mega_menu":false,"appts_customization":false,"premium_text_image_layout":false,"featured_category_layouts":false,"ai_generated_content":false,"image_shapes":false,"group_ordering":false,"inventory_bundles":false,"com_square_transaction_best_discount":false},"isTrial":false},"siteFeatures":{"embed_restricted_widgets":false,"com_gifting":false,"com_authorizenet_payment":false,"com_digital_products":true,"com_coupons":true,"com_product_reviews":false,"com_product_limit":-1,"popup_announcement":true,"popup_coupons":false,"popup_lead_capture":true,"community_support":true,"free_ssl_security":true,"custom_domain_connection":false,"advanced_site_stats":false,"password_protection":false,"video_backgrounds":false,"hd_video_and_audio":false,"membership_registration":false,"membership_settings":false,"online_store":true,"accept_paypal_payments":false,"product_badges":true,"product_modifiers":true,"in_store_pickup":true,"shipping_calculator":true,"chat_and_email_support":true,"phone_support":false,"priority_support":false,"advanced_ecommerce_stats":false,"seo":true,"unlimited_storage":false,"members":false,"abandoned_cart_emails":false,"integrated_shipping_labels":true,"tax_calculator":true,"no_weebly_ads":false,"site_search":true,"product_search":true,"square_gift_cards":true,"inventory_management":true,"integrated_facebook_ads":false,"real_time_shipping_calculator":false,"age_confirmation":true,"square_processing_rate_id":"ECOM_SOS_FREE","square_processing_rate_display":{"USD":[{"percent":"2.9","flat":30,"type":"all"}],"AUD":[{"percent":"2.2","flat":0,"type":"all"}],"CAD":[{"percent":"2.8","flat":30,"type":"all"}],"EUR":[{"percent":"1.4","flat":25,"type":"intra-eu"},{"percent":"2.9","flat":25,"type":"non-eu"}],"GBP":[{"percent":"1.4","flat":25,"type":"intra-eu"},{"percent":"2.5","flat":25,"type":"non-eu"}],"JPY":[{"percent":"3.6","flat":0,"type":"non-jcb"},{"percent":"3.6","flat":0,"type":"jcb"}]},"favicon_customization":false,"site_code_customization":true,"instagram_feed_tagging":true,"quick_shop":true,"scheduleEnabled":false,"smartGroupsEnabled":false,"socialAdsEnabled":false,"lifetimeEmails":2,"emailsPerMonth":2,"recipientsPerEmail":500,"recipientsPerMonth":1000,"automations":0,"automatedRecipientsPerMonth":0,"enabledLeadFormTypes":["popup"],"allowsPurchasingCredits":false,"insights_overview":false,"insights_sales":false,"insights_products":false,"custom_fonts":false,"com_shipping_settings":true,"com_manage_gift_cards":true,"com_create_shipping_label_discount":true,"customer_accounts":true,"com_stripe_payment":false,"com_product_sync":true,"com_product_variant_limit":-1,"com_shipping_labels_tier":"weebly_cpp_tier","com_transaction_fee":"0.00","form_file_upload":false,"product_scheduled_actions":false,"custom_site_icon":false,"video_uploading":0,"buyer_customer_accounts":false,"personalized_order_screen":false,"personalized_recommendations":false,"easy_reordering":false,"self_serve_ordering":true,"ecom_preorders":false,"order_text_alerts":true,"time_based_categories":false,"advanced_order_limits":false,"modifier_images":false,"free_fulfillment_meter":false,"spd_fees_amount":0,"twenty_four_seven_support":false,"advanced_design_controls":false,"order_item_quantity_limit":false,"stock_media":false,"so_buyer_subscriptions":false,"item_badge_customization":false,"shop_all_item_layouts":false,"icon_sets":false,"banner_slides":false,"priority_phone_support":false,"pdp_layouts":false,"full_height_banners":false,"scrolling_text":false,"featured_item_layouts":false,"mega_menu":false,"appts_customization":false,"premium_text_image_layout":false,"featured_category_layouts":false,"ai_generated_content":false,"image_shapes":false,"group_ordering":false,"inventory_bundles":false,"com_square_transaction_best_discount":false},"featureset":{"pages":["category","shopAll","storiesOverview"],"quickShop":true,"search":true,"blocks":["featured-products"]},"page":{"id":"03cd8fc0-b877-11f0-bac0-d764550944c4","site_snapshot_id":"03cbc5c0-b877-11f0-9976-89f51a2bef1b","properties":{"name":"Stories Overview","route":"stories","title":"Stories Overview","typeID":"storiesOverview","contentAreas":{"banner":{"id":"7e4575c4-b55e-11f0-b342-e1b2ec8030e1","hidden":false,"content":{"id":"7e4575c5-b55e-11f0-b342-e1b2ec8030e1","type":"block","layout":"blog-banner-left-aligned","purpose":"blog-banner@^1.1.0","elements":[{"id":"7e4575c6-b55e-11f0-b342-e1b2ec8030e1","purpose":"title","properties":{}},{"id":"7e4575c7-b55e-11f0-b342-e1b2ec8030e1","purpose":"description","properties":{"content":{"quill":{"ops":[{"insert":"A collection of our previous customers\n"}]}}}}],"properties":{"height":"medium","shortID":"FDKBnu","background":{"type":"image","image":{"width":1080,"height":1080,"isDark":true,"source":"\/uploads\/b\/4e03c8349274b5891180154b2a365364b310446dac79f9e869d77ab6e724e0b5\/Aesthetic%20Patel%20Summer%20Photo%20Collage%20Instagram%20Post_1761909406.png","original":"\/uploads\/b\/4e03c8349274b5891180154b2a365364b310446dac79f9e869d77ab6e724e0b5\/Aesthetic%20Patel%20Summer%20Photo%20Collage%20Instagram%20Post_1761909406.png","sourceSet":{},"attribution":{}}}}}},"sticky":{"id":"7e4575c0-b55e-11f0-b342-e1b2ec8030e1","hidden":false,"content":{"id":"7e4575c1-b55e-11f0-b342-e1b2ec8030e1","type":"container","cells":[{"id":"7e4575c2-b55e-11f0-b342-e1b2ec8030e1","type":"cell","content":{"id":"7e4575c3-b55e-11f0-b342-e1b2ec8030e1","type":"block","layout":"blog-feed-layout-column","purpose":"blog-feed@^1.0.0","elements":[],"properties":{"design":{"background":{"type":"color","color":{"value":"--primary-color","isDark":true}},"columnCount":3,"numberOfPosts":3},"shortID":"KWpneG","subtitle":{"hidden":true},"article-excerpts":{"hidden":false},"article-thumbnails":{"hidden":false,"aspectRatio":"1_1"}}}}]}},"userContent":{"id":"7e4575c8-b55e-11f0-b342-e1b2ec8030e1","hidden":false,"content":{"id":"7e4575c9-b55e-11f0-b342-e1b2ec8030e1","type":"container","cells":[]}}}}}},"storeInfo":{"merchant_id":"","buyer_customer_accounts_enabled":false,"currency":"PHP","locale":"en_PH","language":"en","syncing_disabled":false,"return_policy":null,"shipping_policy":null,"max_donation_amount":250000,"store_mode":"cart","payment_method_support":{"visa":false,"mastercard":false,"amex":false,"discover":false,"jcb":false,"interac":false,"paypal":false,"apple_pay":false,"google_pay":false,"cash_app":false,"square_pay":false},"show_pdp_buy_now_button":false,"allowed_to_sell":true,"accepting_orders":false,"has_payment_processor":false,"is_group_ordering_enabled":false,"product_reviews_enabled":false,"show_on_sale_section":true,"show_low_stock_section":false,"show_out_of_stock_section":false,"shipping_location_ids":[],"fulfillment_support":{"delivery":true,"pickup":false,"shipping":true,"dine_in":false,"manual":true,"digital":false},"seller_preferred_fulfillment":"delivery","locations_counts":{"pickup":0,"delivery":1,"dine_in":0,"pickup_or_delivery":1,"brick_and_mortar_fulfillment":1,"shipping":0,"total":1},"has_subscribable_items":false,"has_shippable_product":true,"has_time_based_categories":false,"product_setting_low_stock_threshold":5,"category_hierarchy_root_ids":{"site_category_id":"1","id":"11f0b2fe41b9a23593c33cecef6dbae8"}},"commerceLinks":{"products":{},"categories":{},"meta":{"pagination":{"products":[],"categories":{"per_page":2500,"current_page":1,"total_pages":1}}}},"autoNavLinks":[{"link":{"page":{"pageID":"03cd1520-b877-11f0-b15a-cf88d09f182e"}},"type":"page"},{"link":{"page":{"pageID":"03ccd250-b877-11f0-ba0e-8f5a3678e6e8"}},"type":"page"},{"link":{"page":{"pageID":"03cc7fd0-b877-11f0-8742-89c5fbaef709"}},"type":"page"},{"link":{"story":"5a9464c0-b55e-11f0-a46e-879a931b1d10"},"type":"story","title":"Story title"},{"link":{"page":{"pageID":"03cc4520-b877-11f0-8b03-d791ffe0a217"}},"type":"page"},{"link":{"storiesOverview":true},"type":"storiesOverview","children":[]}],"blogPostLinks":{"0":{"id":"a04f6320-b875-11f0-965f-27b5e3719125","slug":"2nd-customer","name":"2nd customer","draft_id":"2eaff7b0-b873-11f0-be51-c5db3d7a18c5"},"1":{"id":"976ec4b0-b876-11f0-8e4e-f7ced5a457fe","slug":"third-customer","name":"Third customer","draft_id":"d7056da0-b875-11f0-a889-17b7d809c957"},"2":{"id":"d9f1b620-b84f-11f0-92a4-1dfe3d433e75","slug":"our-first-customer","name":"Our first customer","draft_id":"6e316dd0-b662-11f0-982f-e3d20eb3041e"}},"featureFlags":{"ecom.website.deprecated-layouts":false,"marketing-enable-drive-repeat-purchase-campaign":true,"ecom.website.facebook-food":true,"ecom.website.theme-export":false,"ecom.website.chamber-via-fastly":true,"ecom.square-online-published-catalog-cache-version":"2023-11-13","ecom.checkout.open_tabs":true,"ecom.website.photo-reviews":true,"ecom.checkout.cmi-sentry-integration":true,"ecom.checkout.cmi.bootstrap-tracking-snowplow":true,"ecom.checkout.cmi.bootstrap-tracking-ga":true,"ecom.website.order-confirmation-page.website-redirect":false,"ecom.checkout.cmi.locale-view-splitting":true,"ecom.checkout.open_tabs_gc_coupon":true,"ecom.cmi-cart":true,"ecom.checkout.cmi.theme-fonts":false,"ecom-fulfillment-api-v-2":false,"ecom.omnichannel-discounts-frontend":true,"ecom.omnichannel-discounts-category-api":false,"ecom-improved-tipping-experience":true,"ecom.splash.loyalty":false,"ecom.website.published-site.datadog-rum":true,"ecom.website.editor.datadog-rum":true,"ecom-website-published-site-datadog-rum-bot-filter":true,"ecom-use-tracking-inventory":true,"ecom.image-controls.width-fix":true,"ecom.gradient-backgrounds":true,"ecom.website.form-fraud-blocking":true,"ecom.website.form-fraud-auto-ban":true,"ecom.website.code-editor":false,"ecom.shopping.pdp-layouts-m1":true,"ecom.chamber.subscriptions":true,"ecom.tuba.subscriptions-paid-shipping-rates":true,"ecom-cko-enhanced-logging":true,"ecom-cko-unified-logging":true,"ecom.shopping.so-coupons-sunset-integrations":false,"ecom.order-online-text-layouts":true,"ecom.appointment-improvements":true,"ecom.appointment-improvements-m2":true,"ecom.tuba.committed-inventory-m1":true,"ecom.splash-improvements":true,"ecom-themes-onboarding":true,"ecom.shopping.featured-categories-paid-layouts":true,"ecom.website.ai-text.short-form":false,"ecom.website.ai-text.long-form":false,"ecom.website.metered-request.override":false,"ecom.website.async-create-theme":false,"ecom.chamber.spi.serve-items":false,"ecom.can_use_cart_sharing":false,"ecom.website.ai.editor-prototype":false,"ecom.website.ai.page-seo":false,"ecom.appointment-direct-booking":true,"ecom-service-cutover-fe-request-augmentations":true,"ecom.catalog.so-item-library-deprecation-3":true,"ecom.kiosk-photo-card":true,"ecom.website.system-page.cart":false,"ecom-enable-kiosk-large-catalog-layout":false,"ecom-hide-instagram":false,"ecom-enable-kiosk-item-preloading":true,"ecom-brand-api-sync":true,"ecom.service-cutover.enable-tuba-traffic":true,"ecom-show-order-online":false,"ecom-website-combos":true,"websdk-use-new-afterpay-buttons":false,"ecom-checkout-should-check-is-decouple-checkout":true,"ecom-prime-use-store-info-v29":true,"ecom-checkout-decouple-open-tabs":true,"ecom-checkout-force-pci-compliance":false,"ecom-website-hide-food-beverage-themes":false,"ecom-orbit-to-monochrome":true,"ecom-website-fix-dine-in-location-selection":true,"ecom-use-category-ids":true},"lightning":{},"datadog":{"publishedSite":{"service":"spi-ecom-square-online-buyer-journey","applicationId":"0a9b10e6-9671-4e1d-bd0b-2f283f0d29ee","clientToken":"pubc6e7a7143c494f34f1366112ef7c1e2c","env":"production","rum":{"sampleRate":100,"sessionReplaySampleRate":100,"traceSampleRate":10}}}};
+    </script>
+
+                <script type="html/template" id="tracking-pixel-receipt_page">
+            {txid}
+{orderid}
+{storeName}
+{shipping}
+{subtotal}
+{total}
+{name}
+{email}
+{items}
+        </script>
+    
+    <script type="application/javascript" data-cookieconsent="ignore">
+        window.stopSiteLoadingAnimation = () => {
+            const loadingElement = document.querySelector('.loading-view');
+            loadingElement?.remove();
+        };
+    </script>
+
+    
+    <script type="application/javascript" data-cookieconsent="ignore">
+    /**
+     * PCI Compliance Flag
+     *
+     * This flag indicates if scripts have been filtered for PCI compliance (OpenTabs SSO Checkout route).
+     * This value is set only for buyer dashboard/site view to prevent infinite loading loops.
+     *
+     * Do NOT include this file in editor-frame.blade.php as it affects seller dashboard.
+     */
+    window.IS_PCI_SCRIPTS_FILTERED = false;
+</script>
+    <script type="application/javascript" data-cookieconsent="ignore">
+    // used for editor-frame and pub site bootstrap
+    window.APP_ENV = 'production';
+    window.APP_ORIGIN = 'https://square.online';
+    window.APP_URL = 'https://www.weebly.com';
+    window.ASSET_BASE = '/app/website';
+    window.ASSETS_PUBLIC_PATH = 'https://cdn3.editmysite.com/app/website/';
+    window.CMS_API_PATH ='/app/website/cms';
+    window.DEPRECATED_IMAGE_HOST = 'https://images.editor.website';
+    window.FRAME_ORIGIN = 'https://sandbox.square.online';
+    window.GENERATE_GOOGLE_MAP_BASE = 'https://www.editmysite.com';
+    window.IMAGE_HOST = 'https://4e03c8349274b5891180.cdn6.editmysite.com';
+    window.IS_DRAFT = false;
+    window.IS_MAGIC_MIRROR = false;
+    window.IS_THEME_PREVIEW = false;
+    window.IS_ENHANCED_PREVIEW = false;
+    window.DRAFT_ORIGIN = 'https://drafts.editmysite.com';
+    window.PUBLISHED_CMS_API_PREFIX = '/app/cms';
+    window.SENTRY_DSN = 'https://13e49d785d8d4f828038b6136f3b48ba@sentry.io/1263158';
+    window.RELEASE = 'prime-a89fc49';
+    window.URL_BASE = '';
+    window.XSRF_COOKIE_NAME = 'publishedsite-xsrf';
+    window.FASTLY_URL_BASE = 'https://cdn5.editmysite.com';
+    window.SQUARE_WEB_PAYMENTS_SDK = 'https://web.squarecdn.com/v1/square.js'
+    window.PUBLIC_SQUARE_URL_BASE = 'squareup.com';
+    window.PUBLIC_SQUARE_APPTS_URL_BASE = 'app.squareup.com';
+    window.ENABLE_FRONTEND_LOCAL_DEV_CACHE = '';
+    window.GOOGLE_TAG_DEVELOPER_ID = 'developer_id.dOTM2Yj';
+    window.IS_SQUARE_GO = false;
+
+            window.IS_PUBLISHED_MAGIC_MIRROR = false;
+    
+    // state
+    window.SUBDOMAIN_BASE = 'weeblysite.com';
+
+</script>
+
+    <!--square-online-snowplow-->
+
+<script data-cookieconsent="statistics" type="text/plain">
+    (function (p, l, o, w, i, n, g) {
+    var id = i + '-script';
+    if (!l.getElementById(i)) {
+        n = l.createElement(o);
+        g = l.getElementsByTagName(o)[0];
+        n.id = id;
+        n.async = 1;
+        n.src = w;
+        g.parentNode.insertBefore(n, g);
+    }
+})(window, document, "script", "https://cdn3.editmysite.com/app/website/static/js/wsnbn/snowday262.js", "snowday");
+</script>
+
+
+<script data-cookieconsent="ignore" data-role="square-online-snowplow">
+
+(function (p, l, o, w, i, n, g) {
+    if (!p[i]) {
+        p.GlobalSnowplowNamespace = p.GlobalSnowplowNamespace || [];
+        p.GlobalSnowplowNamespace.push(i);
+        p[i] = function () {
+            (p[i].q = p[i].q || []).push(arguments);
+        };
+        p[i].q = p[i].q || [];
+    }
+})(window, document, '', '', "snowday");
+
+var r = [99, 104, 101, 99, 107, 111, 117, 116, 46, 40, 119, 101, 101, 98, 108, 121, 124, 101, 100, 105, 116, 109, 121, 115, 105, 116, 101, 41, 46, 99, 111, 109];
+var snPlObR = function(arr) {
+    var s = '';
+    for (var i = 0 ; i < arr.length ; i++){
+        s = s + String.fromCharCode(arr[i]);
+    }
+    return s;
+};
+var s = snPlObR(r);
+
+var regEx = new RegExp(s);
+
+window._W = {
+    Analytics: {
+        trackers: {
+            wSP: snowday,
+        },
+        user_id: '154196962',
+        site_id: '643792581227141733',
+    },
+};
+
+(function(app_id, ec_hostname, discover_root_domain) {
+    var track = window._W.Analytics.trackers.wSP;
+    if (!track) return;
+    track('newTracker', app_id, ec_hostname, {
+        appId: app_id,
+        post: true,
+        platform: 'web',
+        discoverRootDomain: discover_root_domain,
+        cookieDomain: document.location.hostname,
+        cookieName: '_snow_',
+        contexts: {
+            webPage: true,
+            performanceTiming: true,
+            gaCookies: true
+        },
+        crossDomainLinker: function (linkElement) {
+            return regEx.test(linkElement.href);
+        },
+        respectDoNotTrack: document.cookie.indexOf('gdpr-kb') === -1
+    });
+    track('trackPageView', _W.Analytics.user_id+':'+_W.Analytics.site_id);
+    track('crossDomainLinker', function (linkElement) {
+        return regEx.test(linkElement.href);
+    });
+})(
+    '_wn',
+    'ec.editmysite.com',
+    false
+);
+</script>
+<!--end-square-online-snowplow-->
+
+
+            
+                <script>
+            (function(b,d,h,e,f,a,c){a=d.getElementsByTagName("script");c=!1;
+            var k=e.substring(e.lastIndexOf("/")+1);
+            b[f]=function(a){b[f]=a};
+            a=d.createElement(h),c=d.getElementsByTagName(h)[0],a.async=!0,a.src=e,c.parentNode.insertBefore(a,
+                    c)})(window,document,'script', '//cdn3.editmysite.com/app/marketing/js/dist/messenger.js','messenger');
+            messenger({ preview: 0, asset_domain: 'cdn3.editmysite.com/app/marketing', data_domain: 'www.weebly.com/app/marketing', align: 'right', style: 'long_blue', size: 'large', page_id: '748621431678258' });
+        </script>
+    
+    <link rel="stylesheet" href="https://cdn3.editmysite.com/app/website/css/site.3e67d0820f76a805afd5.css">
+</head>
+<body>
+    <div class="loading-view">
+        <div
+            class="loading-container"
+        >
+            <div
+                class="dot-container"
+            ></div>
+            <div
+                class="dot-container"
+            ></div>
+            <div
+                class="dot-container"
+            ></div>
+        </div>
+    </div>
+    <div id="app"></div>
+
+                
+        <link rel="stylesheet" type="text/css" href="https://cdn3.editmysite.com/app/checkout/assets/checkout/css/wcko.99db5b1178c4fc25a341.css" />
+    </body>
+</html>
